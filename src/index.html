@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        优秀
+    </div>
+    <script src="./js/libs/require.js"></script>
+
+    <script>
+        // 模拟requirejs实现模块的请求和导出，模拟出require方法和define方法；请看下
+        // 1.Require能方法接受一个数组和一个回调函数将模块引入
+        // 2.Define定义的模块能够正确返回内容
+        // 3.可以利用该逻辑引入js文件
+        // 4.正确配置git，并能提交至远程服务器
+
+        require(['./js/main.js'], function() {
+            require(['index']);
+        });
+    </script>
+</body>
+
+</html>
